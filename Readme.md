@@ -16,7 +16,7 @@
 
 ## Каталоги и файлы:
 
-\\blockdiagram - каталог с блок-схемой выполненной в формате  OpenDocument Drawing и PNG  
+\\Blockdiagram - каталог с блок-схемой выполненной в формате  MS Visio и PNG  
 \\Program - каталог с проектом на С#  
 Readme.md - этот файл  
 
