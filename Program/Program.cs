@@ -11,31 +11,30 @@
 
         // проверка решения
 
-        Console.WriteLine("-------------------------------");
         Console.WriteLine(" вариант решения #1\n");
         foreach (string[] array in myArray)
         {
-            PrintArray(array," -> ");
-            PrintArray(GetModArray(array),"\n");
+            PrintArray(array, " -> ");
+            PrintArray(GetModArray(array), "\n\n");
         }
 
-        Console.WriteLine("-------------------------------");
+        Console.WriteLine("\n------------------------------------------");
         Console.WriteLine(" вариант решения #2\n");
         foreach (string[] array in myArray)
         {
             PrintArray(array, " -> ");
-            PrintArray(GetModArray(array), "\n");
+            PrintArray(GetModArray(array), "\n\n");
         }
 
     }
 
-    private static void PrintArray(string[] array,string optional="")
+    private static void PrintArray(string[] array, string optional = "")
     {   //печать массива в одну строку в виде ["X1", "X2", ... , "Xn"]
         // опционально можно вывести в конце дополнительную строку в аргументе string optional
         int arrayLen = array.Length - 1;
         if (arrayLen < 0)
         {
-            Console.WriteLine("[]");
+            Console.WriteLine($"[]{optional}");
             return;
         }
         Console.Write("[");
@@ -43,8 +42,7 @@
         {
             Console.Write($"\"{array[i]}\", ");
         }
-        Console.Write($"\"{array[arrayLen]}\"]");
-        Console.Write(optional);
+        Console.Write($"\"{array[arrayLen]}\"]{optional}");
     }
 
     private static string[] GetModArray(string[] modArray)
